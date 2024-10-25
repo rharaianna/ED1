@@ -1,7 +1,7 @@
 #ifndef PILHAENCADEADA_H
 #define PILHAENCADEADA_H
 
-#include "NoSimples.cpp"
+#include "NoSimples.h"
 #pragma once
 
 class PilhaEncadeada

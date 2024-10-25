@@ -1,6 +1,6 @@
 #ifndef LISTAORDENADAENCADEADA_H
 #define LISTAORDENADAENCADEADA_H
-#include "NoSimples.cpp"
+#include "NoSimples.h"
 #pragma once
 
 class ListaOrdenadaEncadeada

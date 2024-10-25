@@ -1,22 +1,22 @@
 //Nós
-#include "NoSimples.h"
-#include "NoDuplo.h"
-#include "NoABB.h"
+#include "Headers/NoSimples.h"
+#include "Headers/NoDuplo.h"
+#include "Headers/NoABB.h"
 //Listas
-#include "ListaContigua.h"
-#include "ListaDupla.h"
-#include "ListaEncadeada.h"
-#include "ListaOrdenadaContigua.h"
-#include "ListaOrdenadaEncadeada.h"
+#include "Headers/ListaContigua.h"
+#include "Headers/ListaDupla.h"
+#include "Headers/ListaEncadeada.h"
+#include "Headers/ListaOrdenadaContigua.h"
+#include "Headers/ListaOrdenadaEncadeada.h"
 //Filas
-#include "FilaContigua.h"
-#include "FilaContiguaCircular.h"
-#include "FilaEncadeada.h"
+#include "Headers/FilaContigua.h"
+#include "Headers/FilaContiguaCircular.h"
+#include "Headers/FilaEncadeada.h"
 //Pilhas
-#include "PilhaContigua.h"
-#include "PilhaEncadeada.h"
+#include "Headers/PilhaContigua.h"
+#include "Headers/PilhaEncadeada.h"
 //Arvore
-#include "ABB.h"
+#include "Headers/ABB.h"
 
 //Geral
 #include <iostream>
@@ -24,11 +24,11 @@ using namespace std;
 
 
 void testeListas(){
-    ListaDupla ListaDup();
-    ListaEncadeada ListaEncad();
-    ListaOrdenadaContigua ListaOrdCont(4);
-    ListaOrdenadaEncadeada ListaOrdEnc();
+    //ListaDupla ListaDup;
+    //ListaEncadeada ListaEncad;
+    //ListaOrdenadaEncadeada ListaOrdEnc;
     //Lista Contigua
+    ListaOrdenadaContigua ListaOrdCont(4);
         //Criação
         ListaContigua ListaCont(7);
         
@@ -73,10 +73,17 @@ void testeListas(){
         ListaCont.imprime();
         ListaCont2.imprime();
 
+        ListaContigua *ListaCont3 = new ListaContigua(7);
+        ListaCont3 = ListaCont2.copia();
+        ListaCont3->imprime();
 
+        ListaContigua *ListaCont4 = new ListaContigua(7);
+        ListaCont4 = ListaCont3->copiar(7);
+        ListaCont4->imprime();
+        ListaCont3->imprime();
 
-
-
+        ListaCont4->concatena(ListaCont3);
+        ListaCont4->imprime();
 
 
     //Lista Dupla
@@ -88,3 +95,7 @@ void testeListas(){
     //Lista Ordenada Encadeada
 }
 
+int main(){
+    testeListas();
+    return 0;
+}
