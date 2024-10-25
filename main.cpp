@@ -30,7 +30,7 @@ void testeListas(){
     ListaOrdenadaEncadeada ListaOrdEnc();
     //Lista Contigua
         //Criação
-        ListaContigua ListaCont(4);
+        ListaContigua ListaCont(7);
         
         //Insersão
         ListaCont.insereInicio(1);
@@ -45,6 +45,35 @@ void testeListas(){
         ListaCont.imprime();
 
         //Remoção
+        ListaCont.removeFinal();
+        ListaCont.imprime();
+        ListaCont.removeInicio();
+        ListaCont.imprime();
+        ListaCont.removeInicio2();
+        ListaCont.imprime();
+        ListaCont.removeK(0);
+        ListaCont.imprime();
+
+        //Ex Slides
+        int vetor[7] = {0, 1, 2, 3, 4, 5, 6};
+        ListaCont.insereValores(7, vetor);
+        ListaCont.imprime();
+
+        cout<< "Número de nós: "<<ListaCont.numNos()<<endl;
+        cout<< "Maior nó: "<<ListaCont.buscaMaior(5)<<endl;
+
+        ListaCont.limpar();
+        ListaCont.imprime();
+
+        //Outros
+        int vetor2[7] = {1, 5, 6, 7, 8, 9, 10};
+        ListaCont.inserirVet(7,vetor);
+        ListaContigua ListaCont2(7);
+        ListaCont2.inserirVet(7,vetor2);
+        ListaCont.imprime();
+        ListaCont2.imprime();
+
+
 
 
 

@@ -122,7 +122,7 @@ void ListaContigua::removeK(int k){
         cout << "Posicao invalida" << endl;
     }
 }
-void ListaContigua::removeFinal(int val){
+void ListaContigua::removeFinal(){
     if(n>0){
         n--;
     }
@@ -131,7 +131,7 @@ void ListaContigua::removeFinal(int val){
     }
     
 }
-void ListaContigua::removeInicio(int val){
+void ListaContigua::removeInicio(){
     if(n>0){
         removeK(0);
     }

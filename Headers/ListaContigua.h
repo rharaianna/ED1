@@ -22,9 +22,9 @@ public:
     void insereInicio2(int val);
 
     //Remove
-    void removeInicio(int val);
+    void removeInicio();
     void removeK(int k);
-    void removeFinal(int val);
+    void removeFinal();
     void removeInicio2();
 
     //Ex slide (tranquilos)
@@ -34,10 +34,10 @@ public:
     void insereValores(int t, int v[]);
 
     //Outros
-    ListaContigua* copia();
-    ListaContigua* concatena(ListaContigua *l2);
-    ListaContigua* copiar(int valor);
     void inserirVet(int tam, int v[]);
+    ListaContigua* copia();
+    ListaContigua* copiar(int valor);
+    ListaContigua* concatena(ListaContigua *l2);
     void intercala(ListaContigua *la,ListaContigua *lb);
 
 
