@@ -172,7 +172,7 @@ void ListaContigua::insereValores(int t, int v[]){
         }
     }
     else{
-        cout<<"O vetor não cabe na lista"<< endl;
+        cout<<"O vetor nao cabe na lista"<< endl;
     }
 }
 
@@ -196,7 +196,7 @@ ListaContigua* ListaContigua::concatena(ListaContigua *l2){
 
     return nova;
 }
-ListaContigua* ListaContigua::copiar(int valor){
+ListaContigua* ListaContigua::copiar(int valor){ //ta meio errado
     ListaContigua * nova = new ListaContigua(max);
     
     int i;
